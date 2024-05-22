@@ -1,0 +1,38 @@
+<!-- index.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <style>
+        .submit{
+            background-color: blue;
+            color: white;
+            padding: 10px 30px;
+            border: none;
+            font-weight: bold;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+            <center>
+                <form action="/insertData" method="post">
+                    <h2>Book Name</h2>
+                    <input type="text" name="name" placeholder="English" value="Webster's" class="p-2 w-50">
+                    <h2>Book Price</h2>
+                    <input type="text" name="price" placeholder="199.00" value="299.00" class="p-2 w-50"> <br>
+                    <!-- <input type="text" name="title" placeholder="Title"> -->
+                    <input type="submit" value="Place Order" class="submit">
+                    
+                </form>
+            </center>
+    </div>
+   
+</body>
+</html>
